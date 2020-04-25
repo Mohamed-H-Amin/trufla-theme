@@ -1,0 +1,22 @@
+### Author info
+# Name : Mohamed Hussien Amin
+# Email: eng.aminld@gmail.com
+# Phone: 01274312781
+
+### File location
+# Local folder : C:\xampp\htdocs\trufla-wp
+# Local url		: http://localhost/trufla-wp
+# github location :
+
+### Programs used
+# Visual Studio Code
+# XAMPP , wordpress 5.4 , chrome browser
+# npm,git,gulp
+
+### Wordpress info
+# DatabaseName : trufla_db
+# Databaseuser : root
+# DBUserPass   : null
+# WP-login url : http://localhost/trufla-wp/wp-admin
+# WP-login username : admin
+# WP-login password : 123
