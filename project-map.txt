@@ -20,3 +20,4 @@
 # WP-login url : http://localhost/trufla-wp/wp-admin
 # WP-login username : admin
 # WP-login password : 123
+# Theme name : trufla-theme
