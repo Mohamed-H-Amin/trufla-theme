@@ -1,22 +1,14 @@
 a {
-	color: $color__link;
-
-	&:visited {
-		color: $color__link-visited;
-	}
-
-	&:hover,
-	&:focus,
-	&:active {
-		color: $color__link-hover;
-	}
-
-	&:focus {
-		outline: thin dotted;
-	}
-
-	&:hover,
-	&:active {
-		outline: 0;
-	}
+	color: #0d8ba1;
+	-webkit-transition: all 0.25s ease-out;
+	-moz-transition: all 0.25s ease-out;
+	transition: all 0.25s ease-out;
+    text-decoration: none;
+    &:visited{
+        color: #1a5952;
+    }
+    &:hover, &:focus {
+        color: #0599c2;
+        text-decoration: underline;
+    }
 }

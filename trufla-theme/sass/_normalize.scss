@@ -7,10 +7,14 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-
+* {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box; /* Firefox, other Gecko */
+	box-sizing: border-box; /* Opera/IE 8+ */
+}
 html {
-	line-height: 1.15;
-	-webkit-text-size-adjust: 100%;
+	padding: 0;
+	margin: 0;
 }
 
 /* Sections
@@ -21,7 +25,61 @@ html {
  */
 
 body {
+	padding: 0;
 	margin: 0;
+	color: #325050;
+	background: #fff;
+	font-family: 'Libre Baskerville', sans-serif;
+	font-size: 70%;
+	@media only screen and (min-width: 1132px)
+	{
+		background: #ffffff;
+		background: -moz-linear-gradient(
+			left,
+			#ffffff 0%,
+			#ffffff 66%,
+			#e5ede8 66%,
+			#e5ede8 100%
+		);
+		background: -webkit-gradient(
+			linear,
+			left top,
+			right top,
+			color-stop(0%, #ffffff),
+			color-stop(66%, #ffffff),
+			color-stop(66%, #e5ede8),
+			color-stop(100%, #e5ede8)
+		);
+		background: -webkit-linear-gradient(
+			left,
+			#ffffff 0%,
+			#ffffff 66%,
+			#e5ede8 66%,
+			#e5ede8 100%
+		);
+		background: -o-linear-gradient(
+			left,
+			#ffffff 0%,
+			#ffffff 66%,
+			#e5ede8 66%,
+			#e5ede8 100%
+		);
+		background: -ms-linear-gradient(
+			left,
+			#ffffff 0%,
+			#ffffff 66%,
+			#e5ede8 66%,
+			#e5ede8 100%
+		);
+		background: linear-gradient(
+			to right,
+			#ffffff 0%,
+			#ffffff 66%,
+			#e5ede8 66%,
+			#e5ede8 100%
+		);
+		font-size: 100%;
+	}
 }
 
 /**

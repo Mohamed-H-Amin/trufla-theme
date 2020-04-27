@@ -8,7 +8,60 @@
 }
 
 .site-header {
-	grid-area: header;
+	//grid-area: header;
+	
+	height: 230px;
+	padding: 20px 0 70px 0;
+	background: #2d6360 50% 0; /* old IE fallback */
+	background-attachment: fixed, fixed, fixed, scroll;
+	background-position: 0 0, 0 0, -5px -25px, 0 50%;
+	background-repeat: repeat, repeat, repeat, no-repeat;
+	background-size: auto, auto, auto, cover;
+	text-align: center;
+	@media only screen and (max-width: 500px)
+	{
+		height: 250px;
+		padding-top: 0;
+	}
+	@media only screen and (max-width: 1132px)
+	{
+		border-top: solid 10px rgba(19, 67, 71, 0.9);
+	}
+	@media only screen and (min-width: 1132px)
+	{
+		width: 100%;
+		height: 310px;
+		padding: 0 10%;
+		border-top: solid 12px rgba(19, 67, 71, 0.8);
+		box-shadow: inset 0 0 100px rgba(255, 255, 255, 0.3);
+		vertical-align: middle;
+		text-align: left;
+        &::before,
+        &::after {
+            display: block;
+            content: ' ';
+            position: absolute;
+            z-index: 3;
+            top: 9px;
+            left: 0;
+            width: 100%;
+            height: 7px;
+            background: rgba(0, 39, 43, 0.2);
+        }
+        &::after {
+            top: 306px;
+            height: 4px;
+            background: rgba(0, 39, 43, 0.075);
+        }
+	}
+	@media (min--moz-device-pixel-ratio: 1.5),
+	(-o-min-device-pixel-ratio: 3 / 2),
+	(-webkit-min-device-pixel-ratio: 1.5),
+	(min-device-pixel-ratio: 1.5),
+	(min-resolution: 1.5dppx)
+	{
+		background-size: 50% auto, auto, auto, cover;
+	}
 }
 
 .site-main {

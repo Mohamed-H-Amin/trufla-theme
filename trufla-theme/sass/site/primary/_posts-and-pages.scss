@@ -21,3 +21,127 @@
 	clear: both;
 	margin: 0 0 1.5em;
 }
+.intro a,
+.intro a:visited {
+	position: relative;
+	display: inline-block;
+	padding: 1px 10px 1px 32px;
+	margin: -1px -10px -1px -6px;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+	color: #809b7e;
+	font-family: 'Julius Sans One', sans-serif;
+	text-transform: uppercase;
+}
+.intro a:hover,
+.intro a:focus {
+	z-index: 2;
+	color: #fff;
+	background: #3d8a9f;
+	text-decoration: none;
+}
+
+.intro a::before {
+	display: inline-block;
+	position: absolute;
+	top: 6px;
+	left: 8px;
+	padding: 2px;
+	color: #a9b995;
+	background: #d9e1cd;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-o-border-radius: 2px;
+
+	content: 'D';
+	font-size: 16px;
+	text-indent: 0;
+
+	/* icomoon.io defaults */
+	font-family: 'verdemoderna';
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+
+	-webkit-transition: all 0.25s ease-out;
+	-moz-transition: all 0.25s ease-out;
+	transition: all 0.25s ease-out;
+}
+.intro a:hover::before {
+	color: #fff;
+	background: #357d93;
+}
+
+/* coloured cutoff */
+div.participation,
+div.benefits {
+	background-attachment: scroll, scroll, fixed;
+	background-color: rgba(138, 188, 159, 0.5);
+	background-repeat: repeat, repeat, no-repeat;
+	background-size: auto, auto, cover;
+}
+/* extra padding at the cutoffs */
+div.participation {
+	padding: 3em 0;
+	margin-top: 3em;
+}
+div.benefits {
+	padding-bottom: 3em;
+	margin-bottom: 3em;
+}
+div.participation h3,
+div.benefits h3 {
+	margin-top: 0;
+}
+div.participation p,
+div.benefits p {
+	margin-bottom: 0;
+}
+.requirements p:nth-child(5) {
+	padding-bottom: 2em;
+}
+.supporting {
+    .requirements {
+        float: none;
+        clear: both;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        a {
+            text-decoration: none;
+        }
+        a:hover,
+        a:focus {
+            text-decoration: underline;
+        }
+        h3 {
+            padding-top: 0;
+        }
+        p {
+            &:last-child {
+                width: auto;
+                padding: 1em 12%;
+                margin: 0;
+                color: rgba(255, 255, 255, 0.4);
+                background: #3e5d67;
+            
+                background-attachment: fixed, fixed, fixed, scroll;
+                background-position: 0 0, -5px -25px, 0 0, 0 50%;
+                background-repeat: repeat, repeat, repeat, no-repeat;
+                background-size: auto, auto, auto, cover;
+            
+                font-size: 2em;
+                font-style: italic;
+                text-align: center;
+            }
+            &:last-child a {
+                color: rgba(255, 255, 255, 0.7);
+                font-style: normal;
+            }
+        }
+    }
+}

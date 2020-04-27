@@ -1,7 +1,26 @@
 p {
-	margin-bottom: 1.5em;
+	// margin-bottom: 1.5em;
+	margin: 0.75em 0;
+	line-height: 2;
+}
+.page-wrapper {
+	position: relative;
+}
+.summary,
+.preamble {
+	width: 80%;
+	margin: 0 auto;
+}
+.supporting h3,
+.supporting p {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
+.summary {
+	padding-top: 2em;
+}
 dfn,
 cite,
 em,
@@ -38,8 +57,10 @@ var {
 
 abbr,
 acronym {
-	border-bottom: 1px dotted $color__border-abbr;
-	cursor: help;
+	border: none;
+	text-transform: uppercase;
+	font-size: 0.9em;
+	letter-spacing: 0.01em;
 }
 
 mark,
